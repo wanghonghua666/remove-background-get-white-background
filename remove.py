@@ -2,6 +2,9 @@ from rembg import remove
 from PIL import Image
 import os
 
+# 設定模型為高精度版
+os.environ["REMBG_MODEL"] = "isnet-general-use"
+
 input_folder = 'input_images'
 output_folder = 'output_images'
 os.makedirs(output_folder, exist_ok=True)
