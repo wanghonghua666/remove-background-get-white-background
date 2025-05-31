@@ -20,6 +20,3 @@ for filename in os.listdir(input_folder):
         bg.paste(img, mask=img.split()[3])
 
         bg.save(os.path.join(output_folder, filename))
-        bg.paste(img, mask=img.split()[3])
-
-        bg.save(os.path.join(output_folder, filename))
